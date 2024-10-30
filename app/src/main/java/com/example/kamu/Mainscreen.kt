@@ -81,7 +81,7 @@ fun Mainscreen(
 
             OutlinedTextField(
                 value = alamat,
-                onValueChange = { email = it },
+                onValueChange = { alamat = it },
                 placeholder = {
                     Text("masukkan alamat")
                 }, label = { Text("Alamat") },
@@ -110,7 +110,7 @@ fun Mainscreen(
             Text("simpan")
         }
 
-        Card(modifier.size(height = 200.dp, width = 300.dp)) {
+        Card(modifier.size(height = 300.dp, width = 400.dp)) {
             MainSection(judulParam = "nama", isiparam = namaconfirm )
             MainSection(judulParam = "Jenis Kelamin", isiparam = SelectedGenderconfirm )
             MainSection(judulParam = "Email", isiparam = emailconfirm )
